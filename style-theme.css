@@ -36,6 +36,11 @@ ul { font-size: 16px; line-height: 1.8; list-style-type: '🌸 '; }
 img { border-radius: 30px; width: 40%; border: 10px solid #fff5f8; box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
 img:hover { transform: scale(1.02); }
 
+img {
+    display: block;      
+    margin-left: auto;   
+    margin-right: auto;  
+}
 .music-player-box { background: linear-gradient(to right, #fff0f5, #ffe4e1); border: 1px solid #ffb6c1; }
 .now-playing { font-family: 'Dancing Script', cursive; font-size: 18px; color: #d87093; margin-bottom: 10px; }
 
