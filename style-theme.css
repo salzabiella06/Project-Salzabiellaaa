@@ -33,7 +33,7 @@ ul { font-size: 16px; line-height: 1.8; list-style-type: '🌸 '; }
 .story-bubble span { font-family: 'Dancing Script', cursive; font-size: 22px; color: #ad1457; }
 .story-bubble:hover { transform: scale(1.05); background: white; }
 
-img { border-radius: 30px; width: 40%; border: 10px solid #fff5f8; box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+img { border-radius: 30px; width: 35%; border: 10px solid #fff5f8; box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
 img:hover { transform: scale(1.02); }
 
 img {
