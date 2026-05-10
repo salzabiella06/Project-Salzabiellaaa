@@ -100,3 +100,29 @@ hr { background: #f8bbd0; }
 .ribbon-box:hover .ribbon-content {
     opacity: 1;
 }
+@media (max-width: 768px) {
+    .ribbon-wrapper {
+        position: relative; 
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        margin: 40px 0; 
+    }
+
+    .ribbon-box {
+        width: 90%; 
+        max-height: none; 
+        height: auto; 
+    }
+
+    .ribbon-content {
+        opacity: 1; 
+        padding: 20px;
+    }
+
+    .ribbon-label {
+        background: 
+        border-radius: 20px 20px 0 0;
+    }
+}
