@@ -74,55 +74,48 @@ hr { background: #f8bbd0; }
     box-shadow: 0 5px 15px rgba(248, 187, 208, 0.4);
 }
 
+/* Posisi tetap di bawah kanan layar */
+.ribbon-wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
 .ribbon-box {
     background: #ffffff;
     border: 2px solid #fce4ec;
     border-radius: 20px;
-    width: 250px;           
-    max-height: 50px;       
-    overflow: hidden;       
-    transition: max-height 0.7s ease-in-out; /* Animasi buka tutup */
+    width: 250px;
+    max-height: 50px; /* Kondisi awal tertutup */
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
     box-shadow: 0 10px 25px rgba(248, 187, 208, 0.4);
-    cursor: pointer;
-    margin: 20px auto;      
 }
 
-.ribbon-box:hover {
-    max-height: 500px;      
+.ribbon-box.open, .ribbon-box:hover {
+    max-height: 500px;
 }
 
 .ribbon-content {
-    padding: 10px 20px 30px 20px; 
-    opacity: 0;
-    transition: opacity 0.4s ease;
+    padding: 10px 20px 20px 20px;
 }
 
-.ribbon-box:hover .ribbon-content {
-    opacity: 1;
+.style-awal {
+    font-family: 'Playfair Display', serif;
+    color: #a04a5e;
+    font-size: 1.2rem;
+    background: none; 
+    padding: 0;
+    margin-bottom: 10px;
 }
+
 @media (max-width: 768px) {
     .ribbon-wrapper {
-        position: relative; 
-        right: 0;
-        bottom: 0;
-        display: flex;
-        justify-content: center;
-        margin: 40px 0; 
+        right: 10px;
+        bottom: 10px;
     }
-
     .ribbon-box {
-        width: 90%; 
-        max-height: none; 
-        height: auto; 
-    }
-
-    .ribbon-content {
-        opacity: 1; 
-        padding: 20px;
-    }
-
-    .ribbon-label {
-        background: 
-        border-radius: 20px 20px 0 0;
+        width: 220px; /* Sedikit lebih kecil di HP */
     }
 }
