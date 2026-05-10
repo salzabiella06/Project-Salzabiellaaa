@@ -46,3 +46,46 @@ img {
 
 footer { background-color: #fffafb; border: 1px solid #fce4ec; }
 hr { background: #f8bbd0; }
+.social-links {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid #f8bbd0;
+}
+
+.social-btn.ig {
+    background-color: #ffffff;
+    color: #d81b60;
+}
+
+.social-btn.ig:hover {
+    background-color: #fce4ec;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(216, 27, 96, 0.15);
+}
+
+.social-btn.tt {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.social-btn.tt:hover {
+    background-color: #f3f3f3;
+    transform: scale(1.05);
+    border-color: #333;
+}
+
+.social-btn i {
+    margin-right: 8px;
+}
