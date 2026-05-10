@@ -131,12 +131,16 @@ hr { background: #f8bbd0; }
     color: #f8bbd0;
 }
 
-/* EFEK SAAT DI-HOVER / DIKLIK */
 .ribbon-box:hover {
     width: 250px;
-    height: 220px; /
+    height: auto; 
+    min-height: 250px;
+    padding-bottom: 20px;
 }
 
 .ribbon-box:hover .ribbon-content {
     opacity: 1;
+    display: block;
+    padding: 10px 20px;
+    transition: 0,4s;
 }
