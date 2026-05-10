@@ -134,7 +134,7 @@ hr { background: #f8bbd0; }
 .ribbon-box:hover {
     width: 250px;
     height: 220px;
-
+}
 .ribbon-box:hover .ribbon-content {
     opacity: 1;
 }
