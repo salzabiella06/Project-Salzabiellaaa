@@ -74,7 +74,6 @@ hr { background: #f8bbd0; }
     box-shadow: 0 5px 15px rgba(248, 187, 208, 0.4);
 }
 
-/* Posisi tetap di bawah kanan layar */
 .ribbon-wrapper {
     position: fixed;
     bottom: 20px;
@@ -87,10 +86,20 @@ hr { background: #f8bbd0; }
     border: 2px solid #fce4ec;
     border-radius: 20px;
     width: 250px;
-    max-height: 50px; /* Kondisi awal tertutup */
+    max-height: 50px; 
     overflow: hidden;
     transition: max-height 0.5s ease-in-out;
     box-shadow: 0 10px 25px rgba(248, 187, 208, 0.4);
+}
+.ribbon-label {
+    height: 50px;          
+    display: flex;          
+    align-items: center;    
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    color: #d81b60;
+    font-weight: 600;
 }
 
 .ribbon-box.open, .ribbon-box:hover {
@@ -116,6 +125,6 @@ hr { background: #f8bbd0; }
         bottom: 10px;
     }
     .ribbon-box {
-        width: 220px; /* Sedikit lebih kecil di HP */
+        width: 220px; 
     }
 }
