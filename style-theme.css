@@ -73,3 +73,70 @@ hr { background: #f8bbd0; }
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(248, 187, 208, 0.4);
 }
+.ribbon-wrapper {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+}
+
+.ribbon-box {
+    background: #ffffff;
+    border: 2px solid #fce4ec;
+    border-radius: 20px;
+    width: 160px;
+    height: 50px;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 25px rgba(248, 187, 208, 0.4);
+    cursor: pointer;
+}
+
+.ribbon-label {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d81b60;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.ribbon-content {
+    padding: 0 20px 20px 20px;
+    text-align: center;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.ribbon-content h3 {
+    font-family: 'Playfair Display', serif;
+    color: #a04a5e;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.ribbon-content p {
+    font-size: 0.8rem;
+    color: #666;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.ribbon-footer {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.7rem;
+    color: #f8bbd0;
+}
+
+/* EFEK SAAT DI-HOVER / DIKLIK */
+.ribbon-box:hover {
+    width: 250px;
+    height: 220px; /
+}
+
+.ribbon-box:hover .ribbon-content {
+    opacity: 1;
+}
